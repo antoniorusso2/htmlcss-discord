@@ -66,7 +66,6 @@ header{
 }
 .hero .row{
   align-items: center;
-  padding-top: 100px;
   max-width: 700px;
 }
 /* BUTTTONS FOR DOWNLOAD AND OPEN IN BROWSER */
@@ -78,7 +77,6 @@ header{
   background-color: black;
   color: aliceblue;
 }
-
 /* 1st SECTION TEXT */
 .hero .col{
   width: 80%;
@@ -88,12 +86,12 @@ header{
   text-align: center;
   font-size: 40px;
 }
-
+.hero .text{
+  padding: 30px 0;
+}
 .down-arrow{
   margin-right: 10px;
 }
-
-
 
 /* 2nd SECTION - DISCORD SERVER INFO */
 .channels-info .col.big{
@@ -101,8 +99,21 @@ header{
 }
 .channels-info .col.small{
   flex-grow: 1;
+  padding: 0 20px;
 }
-
+.channels-info .container{
+  margin: 50px auto;
+}
+/* TEXT */
+.channels-info .row{
+  flex-wrap: nowrap;
+  max-width: 1000px;
+}
+.channels-info.title{
+  font-size: 40px;
+  line-height: 45px;
+  margin-bottom: 30px;
+}
 .channels-info img{
   max-width: 600px;
 }
