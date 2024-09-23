@@ -27,7 +27,7 @@ ul, li{
 /* CONTAINER CENTERING */
 .container{
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 1000px;
 }
 
 /* NAVBAR LOGO + LOGIN BUTTON */
@@ -52,11 +52,11 @@ header{
   background-image: url(../img/jumbo.png);
 }
 
-/* ----------- MAIN --------------*/
+/* ---------------------------------------------- MAIN -----------------------------------------*/
 /* 1st SECTION WITH BG AND INTRO */
-.container.intro{
+.hero .container{
   max-width: 700px;
-  margin: 0 auto;
+  height: 400px;
 }
 .hero{
   background-image: url(../img/jumbo.png);
@@ -64,35 +64,47 @@ header{
   background-repeat: no-repeat;
   background-position: center;
 }
-.hero.row{
+.hero .row{
   align-items: center;
   padding-top: 100px;
-  width: 800px;
+  max-width: 700px;
 }
-
-.intro.col{
-  width: 80%;
-  text-align: center;
-}
-.intro.title{
-  text-align: center;
-  font-size: 40px;
-}
-.intro{
-  width: 100%;
-  margin: 30px 0;
-}
-.down-arrow{
-  margin-right: 10px;
-}
-
+/* BUTTTONS FOR DOWNLOAD AND OPEN IN BROWSER */
 .hero .btn{
   line-height: 40px;
   border-radius: 20px;
 }
-.btn.black-bg{
+.hero .btn.black-bg{
   background-color: black;
   color: aliceblue;
+}
+
+/* 1st SECTION TEXT */
+.hero .col{
+  width: 80%;
+  text-align: center;
+}
+.hero .title{
+  text-align: center;
+  font-size: 40px;
+}
+
+.down-arrow{
+  margin-right: 10px;
+}
+
+
+
+/* 2nd SECTION - DISCORD SERVER INFO */
+.channels-info .col.big{
+  flex-grow: 2;
+}
+.channels-info .col.small{
+  flex-grow: 1;
+}
+
+.channels-info img{
+  max-width: 600px;
 }
 
 /* ---------------- ALL FLEXBOX HERE ------------------ */
@@ -126,14 +138,19 @@ section{
 }
 
 /* ROWs FLEXBOX */
+
+.nowrap{
+  flex-wrap: nowrap;
+}
 .row{
-  max-width: 700px;
+  max-width: 1000px;
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   min-height: 100%;
 }
+
 .row-ftr{
   display: flex;
   justify-content: space-between;
@@ -149,19 +166,15 @@ section{
   flex-wrap: nowrap;
 }
 
-.debug .layout-1{
-  /* height: 500px; */
-  width: 450px;
-  /* background-color: rgb(252, 5, 149); */
-}
 
-.debug .layout-2{
+.debug .container.channels-info{
   height: 250px;
   width: 650px;
   background-color: rgb(219, 13, 13);
-  border: 1px solid black;
-}
-.debug .layout-2 .blue{
+  /* border: 1px solid black; */
+} */
+.debug .col.channels-info{
+  max-width: 400px;
   background-color: blue;
   flex-grow: 2;
 }
@@ -192,7 +205,7 @@ section{
   flex-grow: 2;
 }
 .debug .layout-5{
-  /* height: 500px; */
+  height: 500px; 
   width: 650px;
   border: 1px solid black;
 }
@@ -220,6 +233,7 @@ section{
 
 .debug .container.ftr{
   width: 650px;
+  height: auto;
 } 
 .debug .row.ftr{
   background-color: aquamarine;
