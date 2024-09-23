@@ -19,9 +19,15 @@ ul, li{
   list-style: none;
 }
 
+/* GENERAL RULES */
+.color-aliceblue{
+  color: aliceblue;
+}
+
 /* CONTAINER CENTERING */
 .container{
   margin: 0 auto;
+  width: 500px;
 }
 
 /* NAVBAR LOGO + LOGIN BUTTON */
@@ -40,24 +46,32 @@ img.logo{
 
 /* NAV HEADER */
 header{
-  padding: 10px 150px;
+  /* padding: 10px 150px; */
   background-color: rgba(8, 184, 228, 0.253);
   background-image: url(../img/jumbo.png);
 }
 
+/* ----------- MAIN --------------*/
+/* 1st SECTION WITH BG AND INTRO */
 .hero{
   background-image: url(../img/jumbo.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  text-align: center;
 }
 
-/* ----------------ALL FLEXBOX HERE------------------ */
+.padd-top{
+  padding-top: 100px;
+}
+
+/* ---------------- ALL FLEXBOX HERE ------------------ */
 /* NAV FLEXBOX */
 .navbar{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 150px;
 }
 
 .menu{
@@ -65,7 +79,7 @@ header{
   display: flex;
   justify-content: center;
   gap: 50px;
-  color: aliceblue;
+  margin: 0 50px;
 }
 
 .login{
@@ -83,6 +97,8 @@ section{
 
 /* ROWs FLEXBOX */
 .row{
+  max-width: 700px;
+  flex-wrap: wrap;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -96,10 +112,15 @@ section{
 }
 
 /* DEBUG RULES */
-
+.debug .container{
+  height: 500px;
+}
+.debug .row{
+  flex-wrap: nowrap;
+}
 
 .debug .layout-1{
-  height: 500px;
+  /* height: 500px; */
   width: 450px;
   /* background-color: rgb(252, 5, 149); */
 }
@@ -141,7 +162,7 @@ section{
   flex-grow: 2;
 }
 .debug .layout-5{
-  height: 500px;
+  /* height: 500px; */
   width: 650px;
   border: 1px solid black;
 }
@@ -178,4 +199,8 @@ section{
 .footer-layout.debug{
   background-color: black;
   border-top: 1px solid lightgrey;
+}
+
+.debug .col{
+  width: 500px;
 }
