@@ -20,21 +20,27 @@ ul, li{
   margin: 0 auto;
 }
 
-/* NAVBAR LOGO */
+/* NAVBAR LOGO + LOGIN BUTTON */
 img.logo{
   display: inline-block;
   max-width: 100px;
 }
 
-
+.btn{
+  background-color: aliceblue;
+  color: black;
+  padding: 0px 20px;
+  border-radius: 16px;
+  line-height: 30px;
+}
 
 /* NAV HEADER */
-
 header{
   padding: 10px 150px;
   background-color: rgba(8, 184, 228, 0.253);
 }
 
+/* ----------------ALL FLEXBOX HERE------------------ */
 /* NAV FLEXBOX */
 .navbar{
   display: flex;
