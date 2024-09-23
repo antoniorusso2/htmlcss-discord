@@ -1,0 +1,168 @@
+/* RESET RULES */
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul, li{
+  list-style: none;
+}
+
+/* CONTAINER CENTERING */
+.container{
+  margin: 0 auto;
+}
+
+/* SECTIONS BGs AND PROPORTIONS */
+
+
+
+/* NAV HEADER */
+
+header{
+  padding: 10px 150px;
+  background-color: rgba(8, 184, 228, 0.253);
+}
+
+/* NAV FLEXBOX */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center ;
+}
+
+.menu{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.login{
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* SECTION FLEX & RULES*/
+section{
+  padding: 20px 0;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+/* ROWs FLEXBOX */
+.row{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  min-height: 100%;
+}
+.row-ftr{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  min-height: 100%;
+}
+
+/* DEBUG RULES */
+
+.section-1.debug{
+  background-color: blue;
+}
+
+.debug .logo, .debug .login{
+  border: 1px dashed black ;
+  flex-grow: 1;
+}
+.debug .menu{
+  border: 1px dashed black ;
+  background-color: orange;
+  flex-grow: 2;
+}
+.debug .navbar{
+  background-color: orange;
+}
+
+.debug .layout-1{
+  height: 200px;
+  width: 450px;
+  background-color: rgb(252, 5, 149);
+}
+
+.debug .layout-2{
+  height: 250px;
+  width: 650px;
+  background-color: rgb(219, 13, 13);
+  border: 1px solid black;
+}
+.debug .layout-2 .blue{
+  background-color: blue;
+  flex-grow: 2;
+}
+.debug .pink{
+  background-color: pink;
+  flex-grow: 1;
+}
+
+.debug.section-3, .debug.section-5{
+  background-color: lightgrey;
+}
+
+.section-6.debug{
+  background-color: black;
+}
+
+.debug .layout-3 .pink{
+  order: 1;
+}
+.debug .layout-3{
+  height: 250px;
+  width: 650px;
+  background-color: rgb(219, 13, 13);
+  border: 1px solid black;
+}
+.debug .layout-3 .blue{
+  background-color: blue;
+  flex-grow: 2;
+}
+.debug .layout-5{
+  height: 500px;
+  width: 650px;
+  border: 1px solid black;
+}
+
+.debug .green{
+  background-color: green;
+  flex-grow: 1;
+}
+
+.debug .layout-6{
+  height: 350px;
+  width: 650px;
+  border: 1px solid black;
+}
+
+.debug .two-six{
+  background-color: palevioletred;
+  width: calc(100%/6* 2);
+}
+.debug .one-six{
+  background-color: aquamarine;
+  width: calc(100%/6);
+  border: 1px solid grey;
+}
+
+.debug .container.ftr{
+  width: 650px;
+} 
+.debug .row.ftr{
+  background-color: aquamarine;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.footer-layout.debug{
+  background-color: black;
+  border-top: 1px solid lightgrey;
+}
