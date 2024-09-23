@@ -2,7 +2,6 @@
 
 
 /* RESET RULES */
-
 *{
   box-sizing: border-box;
   margin: 0;
@@ -92,7 +91,24 @@ header{
   margin-right: 10px;
 }
 
-/* 2nd, 3rd AND 4th SECTION - DISCORD SERVER INFO - VOICHE CHANNEL INFO - FANBASE*/
+/* 2nd, 3rd,4th,5th SECTION - DISCORD SERVER INFO - VOICHE CHANNEL INFO - FANBASE - RELIABILITY*/
+
+/* SECTIONS IMGs WIDTH*/
+.channels-info img,
+.voice-ch img,
+.fanbase img{
+  max-width: 600px;
+}
+.channels-info,
+.voice-ch,
+.fanbase,
+.reliability{
+  padding: 100px 0;
+}
+
+.voice-ch, .reliability{
+  background-color: lightgray ;
+}
 .channels-info .col.big,
 .voice-ch .col.big,
 .fanbase .col.big{
@@ -119,22 +135,41 @@ header{
 }
 .channels-info .title,
 .voice-ch .title,
-.fanbase .title{
+.fanbase .title,
+.reliability .title{
   font-size: 40px;
   line-height: 45px;
   margin-bottom: 30px;
 }
 
-/* SECTIONS IMGs WIDTH*/
-.channels-info img,
-.voice-ch img,
-.fanbase img{
-  max-width: 600px;
-}
-.voice-ch{
-  background-color: lightgray ;
+/* TEXT FORMATTING RELIABILITY SECTION - FOR OTHER MODS READ FROM LINE 94 */
+.reliability{
+  text-align: center;
 }
 
+/* LAST SECTION MAC-DOWNLOAD BUTTON */
+.endpage-btn{
+  display: flex;
+  justify-content: center;
+  align-content: ;
+  flex-wrap: wrap;
+  max-width: 600px;
+}
+.endpage-btn .download-mac{
+  height: 50px;
+  width: 600px;
+  margin-bottom: 20px;
+  background-image: url(../img/stars.svg);
+  background-size: contain;
+  background-repeat: repeat;
+  background-position:right;
+}
+.endpage-btn .btn{
+  color: white;
+  padding: 5px 18px;
+  border-radius: 20px;
+  background-color: rgba(59, 97, 223, 0.822);
+}
 /* ---------------- ALL FLEXBOX HERE ------------------ */
 /* NAV FLEXBOX */
 .navbar{
@@ -157,19 +192,8 @@ header{
   justify-content: flex-end;
 }
 
-/* SECTION FLEX & RULES*/
-section{
-  padding: 20px 0;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-}
-
 /* ROWs FLEXBOX */
 
-.nowrap{
-  flex-wrap: nowrap;
-}
 .row{
   max-width: 1000px;
   flex-wrap: wrap;
