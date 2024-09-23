@@ -93,29 +93,35 @@ header{
   margin-right: 10px;
 }
 
-/* 2nd SECTION - DISCORD SERVER INFO */
-.channels-info .col.big{
-  flex-grow: 2;
+/* 2nd AND 3rd SECTION - DISCORD SERVER INFO AND VOICHE CHANNEL INFO*/
+.channels-info .col.big, .voice-ch .col.big{
+  flex-grow: 1;
 }
-.channels-info .col.small{
+.channels-info .col.small, .voice-ch .col.small{
   flex-grow: 1;
   padding: 0 20px;
+  width: 350px;
 }
-.channels-info .container{
+.channels-info .container, .voice-ch .container{
   margin: 50px auto;
 }
 /* TEXT */
-.channels-info .row{
+.channels-info .row, .voice-ch .row{
   flex-wrap: nowrap;
   max-width: 1000px;
 }
-.channels-info.title{
+.channels-info .title, .voice-ch .title{
   font-size: 40px;
   line-height: 45px;
   margin-bottom: 30px;
 }
-.channels-info img{
+
+/* SECTIONS IMGs WIDTH*/
+.channels-info img, .voice-ch img{
   max-width: 600px;
+}
+.voice-ch{
+  background-color: lightgray ;
 }
 
 /* ---------------- ALL FLEXBOX HERE ------------------ */
@@ -173,28 +179,8 @@ section{
 .debug .container{
   height: 500px;
 }
-.debug .row{
-  flex-wrap: nowrap;
-}
 
-
-.debug .container.channels-info{
-  height: 250px;
-  width: 650px;
-  background-color: rgb(219, 13, 13);
-  /* border: 1px solid black; */
-} */
-.debug .col.channels-info{
-  max-width: 400px;
-  background-color: blue;
-  flex-grow: 2;
-}
-.debug .pink{
-  background-color: pink;
-  flex-grow: 1;
-}
-
-.debug.section-3, .debug.section-5{
+.debug.section-5{
   background-color: lightgrey;
 }
 
@@ -202,19 +188,6 @@ section{
   background-color: black;
 }
 
-.debug .layout-3 .pink{
-  order: 1;
-}
-.debug .layout-3{
-  height: 250px;
-  width: 650px;
-  background-color: rgb(219, 13, 13);
-  border: 1px solid black;
-}
-.debug .layout-3 .blue{
-  background-color: blue;
-  flex-grow: 2;
-}
 .debug .layout-5{
   height: 500px; 
   width: 650px;
