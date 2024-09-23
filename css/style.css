@@ -45,10 +45,9 @@ img.logo{
   line-height: 30px;
 }
 
-/* NAV HEADER */
+/* NAV HEADER MATCHING BG WITH HERO SECTION*/
 header{
   /* padding: 10px 150px; */
-  background-color: rgba(8, 184, 228, 0.253);
   background-image: url(../img/jumbo.png);
 }
 
@@ -93,31 +92,43 @@ header{
   margin-right: 10px;
 }
 
-/* 2nd AND 3rd SECTION - DISCORD SERVER INFO AND VOICHE CHANNEL INFO*/
-.channels-info .col.big, .voice-ch .col.big{
+/* 2nd, 3rd AND 4th SECTION - DISCORD SERVER INFO - VOICHE CHANNEL INFO - FANBASE*/
+.channels-info .col.big,
+.voice-ch .col.big,
+.fanbase .col.big{
   flex-grow: 1;
 }
-.channels-info .col.small, .voice-ch .col.small{
+.channels-info .col.small, 
+.voice-ch .col.small,
+.fanbase .col.small{
   flex-grow: 1;
   padding: 0 20px;
   width: 350px;
 }
-.channels-info .container, .voice-ch .container{
+.channels-info .container,
+.voice-ch .container,
+.fanbase .container{
   margin: 50px auto;
 }
 /* TEXT */
-.channels-info .row, .voice-ch .row{
+.channels-info .row,
+.voice-ch .row, 
+.fanbase .row{
   flex-wrap: nowrap;
   max-width: 1000px;
 }
-.channels-info .title, .voice-ch .title{
+.channels-info .title,
+.voice-ch .title,
+.fanbase .title{
   font-size: 40px;
   line-height: 45px;
   margin-bottom: 30px;
 }
 
 /* SECTIONS IMGs WIDTH*/
-.channels-info img, .voice-ch img{
+.channels-info img,
+.voice-ch img,
+.fanbase img{
   max-width: 600px;
 }
 .voice-ch{
